@@ -18,7 +18,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 backdrop-blur-sm mb-8"
           >
             <span className="flex h-2 w-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-xs font-medium text-white/80">Unemply 1.0 is now live</span>
+            <span className="text-xs font-medium text-foreground/80">Unemply 1.0 is now live</span>
           </motion.div>
           
           <motion.h1 
@@ -35,7 +35,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed"
+            className="text-lg md:text-xl text-foreground/60 mb-10 max-w-2xl leading-relaxed"
           >
             Lacak status lamaran dari Glints, Kalibrr, JobStreet, dan LinkedIn tanpa ribet. 
             Fokus interview, bukan spreadsheet.
@@ -50,8 +50,8 @@ export function Hero() {
             <a href="#daftar" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 py-4 rounded-full font-semibold transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:-translate-y-0.5">
               Mulai Gratis <ArrowRight size={18} />
             </a>
-            <a href="#demo" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-surface hover:bg-surface-hover border border-border text-white px-8 py-4 rounded-full font-medium transition-all hover:-translate-y-0.5">
-              <PlayCircle size={18} className="text-white/70" /> Lihat Demo
+            <a href="#demo" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-surface hover:bg-surface-hover border border-border text-foreground px-8 py-4 rounded-full font-medium transition-all hover:-translate-y-0.5">
+              <PlayCircle size={18} className="text-foreground/70" /> Lihat Demo
             </a>
           </motion.div>
         </div>
@@ -68,18 +68,18 @@ export function Hero() {
             {/* Browser/App Header */}
             <div className="h-12 border-b border-border flex items-center px-4 gap-2 bg-background/50">
               <div className="flex gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-white/10" />
-                <div className="w-3 h-3 rounded-full bg-white/10" />
-                <div className="w-3 h-3 rounded-full bg-white/10" />
+                <div className="w-3 h-3 rounded-full bg-foreground/10" />
+                <div className="w-3 h-3 rounded-full bg-foreground/10" />
+                <div className="w-3 h-3 rounded-full bg-foreground/10" />
               </div>
-              <div className="mx-auto flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/5 border border-white/5 text-xs text-white/40 font-mono">
+              <div className="mx-auto flex items-center gap-2 px-3 py-1.5 rounded-md bg-foreground/5 border border-foreground/5 text-xs text-foreground/40 font-mono">
                 unemply.com/board
               </div>
             </div>
             
             {/* App Content - Kanban Board */}
             <div className="p-6 md:p-8 flex gap-6 overflow-x-auto hide-scrollbar min-h-[400px]">
-              <KanbanColumn title="Wishlist" count={2} color="bg-white/10">
+              <KanbanColumn title="Wishlist" count={2} color="bg-foreground/10">
                 <KanbanCard title="Frontend Developer" company="Tokopedia" platform="LinkedIn" date="2 hari lalu" />
                 <KanbanCard title="UI Designer" company="Gojek" platform="Glints" date="Hari ini" />
               </KanbanColumn>
@@ -95,7 +95,7 @@ export function Hero() {
               </KanbanColumn>
               
               <KanbanColumn title="Offer" count={0} color="bg-teal-500/20 text-teal-400">
-                <div className="h-24 rounded-xl border border-dashed border-border flex items-center justify-center text-white/30 text-sm">
+                <div className="h-24 rounded-xl border border-dashed border-border flex items-center justify-center text-foreground/30 text-sm">
                   Belum ada offer
                 </div>
               </KanbanColumn>
@@ -112,10 +112,10 @@ function KanbanColumn({ title, count, color, children }: { title: string, count:
     <div className="flex-1 min-w-[260px] flex flex-col gap-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-medium text-sm text-white/90">{title}</span>
+          <span className="font-medium text-sm text-foreground/90">{title}</span>
           <span className={cn("text-xs px-2 py-0.5 rounded-full font-medium", color)}>{count}</span>
         </div>
-        <button className="text-white/40 hover:text-white/80 transition-colors">
+        <button className="text-foreground/40 hover:text-foreground/80 transition-colors">
           <Plus size={16} />
         </button>
       </div>
@@ -132,23 +132,23 @@ function KanbanCard({ title, company, platform, date, active }: { title: string,
       whileHover={{ y: -2, scale: 1.01 }}
       className={cn(
         "p-4 rounded-xl border bg-background/50 backdrop-blur-sm cursor-grab active:cursor-grabbing transition-shadow",
-        active ? "border-accent/50 shadow-[0_0_15px_rgba(20,184,166,0.15)]" : "border-border hover:border-white/20"
+        active ? "border-accent/50 shadow-[0_0_15px_rgba(20,184,166,0.15)]" : "border-border hover:border-foreground/20"
       )}
     >
       <div className="flex justify-between items-start mb-3">
         <div>
-          <h4 className="font-medium text-sm text-white/90 mb-1">{title}</h4>
-          <p className="text-xs text-white/50">{company}</p>
+          <h4 className="font-medium text-sm text-foreground/90 mb-1">{title}</h4>
+          <p className="text-xs text-foreground/50">{company}</p>
         </div>
-        <button className="text-white/30 hover:text-white/70">
+        <button className="text-foreground/30 hover:text-foreground/70">
           <MoreHorizontal size={16} />
         </button>
       </div>
       <div className="flex items-center justify-between mt-4">
-        <span className="text-[10px] font-medium px-2 py-1 rounded-md bg-white/5 text-white/60 border border-white/5">
+        <span className="text-[10px] font-medium px-2 py-1 rounded-md bg-foreground/5 text-foreground/60 border border-foreground/5">
           {platform}
         </span>
-        <span className={cn("text-[10px] font-medium", active ? "text-accent" : "text-white/40")}>
+        <span className={cn("text-[10px] font-medium", active ? "text-accent" : "text-foreground/40")}>
           {date}
         </span>
       </div>

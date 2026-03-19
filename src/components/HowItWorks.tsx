@@ -27,7 +27,7 @@ export function HowItWorks() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-gradient">
             Cara kerjanya simpel
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
             Nggak perlu setup yang ribet. Mulai tracking lamaranmu dalam hitungan menit.
           </p>
         </div>
@@ -52,8 +52,8 @@ export function HowItWorks() {
                   {i + 1}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-white/90 mb-4">{step.title}</h3>
-              <p className="text-white/60 leading-relaxed max-w-sm">{step.desc}</p>
+              <h3 className="text-xl font-semibold text-foreground/90 mb-4">{step.title}</h3>
+              <p className="text-foreground/60 leading-relaxed max-w-sm">{step.desc}</p>
             </motion.div>
           ))}
         </div>

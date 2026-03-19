@@ -24,7 +24,7 @@ export function ProblemSolution() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-gradient">
             Berhenti pakai spreadsheet. <br /> Mulai pakai sistem.
           </h2>
-          <p className="text-lg text-white/60">
+          <p className="text-lg text-foreground/60">
             Mencari kerja itu sudah susah, jangan ditambah pusing dengan cara tracking yang manual dan berantakan.
           </p>
         </div>
@@ -45,8 +45,8 @@ export function ProblemSolution() {
                   <XCircle className="text-red-400/70" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white/90 mb-2">{item.pain}</h3>
-                  <p className="text-white/60 leading-relaxed">{item.solution}</p>
+                  <h3 className="text-xl font-semibold text-foreground/90 mb-2">{item.pain}</h3>
+                  <p className="text-foreground/60 leading-relaxed">{item.solution}</p>
                 </div>
               </motion.div>
             ))}
@@ -67,8 +67,8 @@ export function ProblemSolution() {
                     <span className="font-bold text-xl text-indigo-400">G</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg text-white">Gojek</h4>
-                    <p className="text-sm text-white/50">Product Designer</p>
+                    <h4 className="font-bold text-lg text-foreground">Gojek</h4>
+                    <p className="text-sm text-foreground/50">Product Designer</p>
                   </div>
                 </div>
                 <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-medium border border-accent/20">
@@ -80,29 +80,29 @@ export function ProblemSolution() {
                 <div className="flex items-start gap-4">
                   <CheckCircle2 className="text-accent mt-0.5" size={18} />
                   <div>
-                    <p className="text-sm font-medium text-white/90">Applied via LinkedIn</p>
-                    <p className="text-xs text-white/40 mt-1">12 Mar 2026, 09:00 WIB</p>
+                    <p className="text-sm font-medium text-foreground/90">Applied via LinkedIn</p>
+                    <p className="text-xs text-foreground/40 mt-1">12 Mar 2026, 09:00 WIB</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <CheckCircle2 className="text-accent mt-0.5" size={18} />
                   <div>
-                    <p className="text-sm font-medium text-white/90">HR Screening Call</p>
-                    <p className="text-xs text-white/40 mt-1">15 Mar 2026, 14:00 WIB</p>
+                    <p className="text-sm font-medium text-foreground/90">HR Screening Call</p>
+                    <p className="text-xs text-foreground/40 mt-1">15 Mar 2026, 14:00 WIB</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 relative">
                   <div className="absolute left-2 top-6 bottom-[-24px] w-px bg-border" />
                   <div className="w-[18px] h-[18px] rounded-full border-2 border-accent bg-background z-10 mt-0.5" />
                   <div>
-                    <p className="text-sm font-medium text-white/90">User Interview</p>
+                    <p className="text-sm font-medium text-foreground/90">User Interview</p>
                     <p className="text-xs text-accent mt-1">Besok, 10:00 WIB</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-10 pt-6 border-t border-border">
-                <button className="w-full py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 text-sm font-medium transition-colors border border-white/5">
+                <button className="w-full py-3 rounded-xl bg-foreground/5 hover:bg-foreground/10 text-foreground/80 text-sm font-medium transition-colors border border-foreground/5">
                   Set Follow-up Reminder
                 </button>
               </div>

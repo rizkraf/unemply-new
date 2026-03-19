@@ -2,12 +2,33 @@
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --color-background: #0A0A0B;
-  --color-surface: #141415;
-  --color-surface-hover: #1E1E20;
-  --color-border: #222224;
-  --color-primary: #3B3F8C;
-  --color-accent: #14B8A6; /* Teal 500 */
+  --color-background: var(--bg-color);
+  --color-foreground: var(--fg-color);
+  --color-surface: var(--surface-color);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border-color);
+  --color-primary: var(--primary-color);
+  --color-accent: var(--accent-color);
+}
+
+:root {
+  --bg-color: #F9F9F7;
+  --fg-color: #111827;
+  --surface-color: #FFFFFF;
+  --surface-hover: #F3F4F6;
+  --border-color: #E5E7EB;
+  --primary-color: #3B3F8C;
+  --accent-color: #14B8A6;
+}
+
+.dark {
+  --bg-color: #0A0A0B;
+  --fg-color: #EDEDED;
+  --surface-color: #141415;
+  --surface-hover: #1E1E20;
+  --border-color: #222224;
+  --primary-color: #3B3F8C;
+  --accent-color: #14B8A6;
 }
 
 @layer utilities {
@@ -18,7 +39,7 @@
     @apply bg-surface/40 backdrop-blur-sm border border-border rounded-2xl;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60;
   }
   .text-gradient-accent {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-indigo-400;
@@ -26,6 +47,6 @@
 }
 
 body {
-  background-color: var(--color-background);
-  color: #EDEDED;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
 }

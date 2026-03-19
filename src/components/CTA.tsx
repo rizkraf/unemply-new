@@ -13,7 +13,7 @@ export function CTA() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-white"
+          className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-foreground"
         >
           Sudah siap kendalikan <br className="hidden md:block" /> pencarian kerjamu?
         </motion.h2>
@@ -23,7 +23,7 @@ export function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-lg md:text-xl text-white/70 mb-12 max-w-2xl mx-auto"
+          className="text-lg md:text-xl text-foreground/70 mb-12 max-w-2xl mx-auto"
         >
           Berhenti menebak-nebak status lamaranmu. Bergabung dengan ribuan job seeker Indonesia lainnya yang sudah beralih ke Unemply.
         </motion.p>
@@ -37,7 +37,7 @@ export function CTA() {
           <a href="#daftar" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-background px-10 py-5 rounded-full text-lg font-bold transition-all hover:shadow-[0_0_30px_rgba(20,184,166,0.5)] hover:-translate-y-1">
             Mulai Gratis Sekarang <ArrowRight size={20} />
           </a>
-          <p className="mt-6 text-sm text-white/40">Tidak perlu kartu kredit. Setup dalam 30 detik.</p>
+          <p className="mt-6 text-sm text-foreground/40">Tidak perlu kartu kredit. Setup dalam 30 detik.</p>
         </motion.div>
       </div>
     </section>

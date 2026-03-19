@@ -32,7 +32,7 @@ export function Features() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-gradient">
             Fitur yang ngerti kebutuhanmu
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
             Didesain khusus untuk job seeker Indonesia. Semua yang kamu butuhkan untuk mendarat di pekerjaan impian.
           </p>
         </div>
@@ -48,11 +48,11 @@ export function Features() {
               whileHover={{ y: -5 }}
               className="glass-card p-8 hover:bg-surface/60 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-white/5">
+              <div className="w-12 h-12 rounded-2xl bg-foreground/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-foreground/5">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-white/90 mb-3">{feature.title}</h3>
-              <p className="text-white/50 leading-relaxed text-sm">{feature.desc}</p>
+              <h3 className="text-xl font-semibold text-foreground/90 mb-3">{feature.title}</h3>
+              <p className="text-foreground/50 leading-relaxed text-sm">{feature.desc}</p>
             </motion.div>
           ))}
         </div>
