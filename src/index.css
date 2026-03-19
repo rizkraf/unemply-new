@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-background: #0A0A0B;
+  --color-surface: #141415;
+  --color-surface-hover: #1E1E20;
+  --color-border: #222224;
+  --color-primary: #3B3F8C;
+  --color-accent: #14B8A6; /* Teal 500 */
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface/60 backdrop-blur-md border border-border;
+  }
+  .glass-card {
+    @apply bg-surface/40 backdrop-blur-sm border border-border rounded-2xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+  }
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-indigo-400;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: #EDEDED;
+}
